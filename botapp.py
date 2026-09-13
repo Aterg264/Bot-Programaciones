@@ -38,7 +38,7 @@ if prompt := st.chat_input("Escribe tu respuesta aquí..."):
     historial = "\n".join([f"{m['role']}: {m['content']}" for m in st.session_state.mensajes])
     
     response = client.models.generate_content( #[cite: 1]
-        model="gemini-2.5-flash", #[cite: 1]
+        model="gemini-3.6-flash", #[cite: 1]
         contents=historial,
         config={
             "system_instruction": instrucciones #[cite: 1]
