@@ -56,7 +56,7 @@ if prompt := st.chat_input("Escribe tu respuesta aquí..."):
         datos_curso = json.loads(respuesta_bot[inicio:fin])
         
         try:
-            doc = Document("Plantilla_Formativa_Nueva.docx")
+            doc = Document("PlantillaPython-PF.docx")
             
             # Reemplazar etiquetas
             for p in doc.paragraphs:
