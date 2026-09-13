@@ -80,7 +80,7 @@ if prompt := st.chat_input("Escribe tu respuesta aquí..."):
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             )
         except Exception as e:
-            st.error("Error leyendo la plantilla. Asegúrate de que 'Plantilla_Formativa_Nueva.docx' está en la misma carpeta.")
+            st.error("Error leyendo la plantilla. Asegúrate de que 'PlantillaPython-PF.docx' está en la misma carpeta.")
     else:
         # Si no es JSON, sigue la conversación normal
         st.session_state.mensajes.append({"role": "model", "content": respuesta_bot})
